@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  color: #111;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 0;
+  background: #f5f3ee;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.subtext {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.cta {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+
+  /* smooth animation */
+  transition: all 0.2s ease;
+}
+
+/* HOVER (mouse over) */
+.cta:hover {
+  background: #1e4ed8; /* darker blue */
+  transform: translateY(-2px); /* slight lift */
+}
+
+/* CLICK (pressed state) */
+.cta:active {
+  background: #1a3fb8; /* even darker */
+  transform: translateY(0); /* press down */
+}
+
+/* HOW IT WORKS */
+.how {
+  background: #e6d27a;
+  padding: 80px 0;
+}
+
+.how h2 {
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  background: #eee;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: left;
+}
+
+.step {
+  font-size: 18px;
+  color: #333;
+}
+
+.card h3 {
+  margin: 20px 0 10px;
+  font-size: 24px;
+}
+
+.card p {
+  color: #555;
+}
+
+/* DEMO */
+.demo {
+  padding: 100px 0;
+  background: #f0f0f0;
+}
+
+.demo h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.video-placeholder {
+  margin-top: 40px;
+  height: 300px;
+  background: #ddd;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  background: #f5f3ee;
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  /* font-weight: 700;
+  font-size: 20px; */
+  height:60px;
+}
+
+.video-wrapper {
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 ratio */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* FAQ */
+.faq {
+  padding: 100px 0;
+  background: #f5f5f5;
+}
+
+.faq-grid {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.faq-title h2 {
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+.faq-content {
+  flex: 1;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+}
+
+.faq-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #555;
+}
+
+.faq hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+/* CTA SECTION */
+.cta-section {
+  background: #e6caca;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.cta.large {
+  margin-top: 30px;
+  font-size: 18px;
+  padding: 18px 36px;
+}
