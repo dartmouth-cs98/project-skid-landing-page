@@ -17,12 +17,20 @@
   gtag('config', 'AW-18070624864');
 </script>
 
+<!-- Event snippet for Submit lead form conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
+ <script> 
+ function gtag_report_conversion(url) { 
+  var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; 
+  gtag('event', 'conversion', { 'send_to': 'AW-18070624864/WIZXCIqvupccEOC036hD', 'value': 1.0, 'currency': 'USD', 'event_callback': callback }); 
+  return false; } 
+  </script>
+
 <body>
 
 <header class="header">
   <div class="container nav">
     <div class="logo"><img src="assets/logo.png" class="logo-img" /></div>
-    <a href="https://tally.so/r/Y5YMVz?variant=creative">
+    <a href="https://tally.so/r/Y5YMVz?variant=creative" onclick="return gtag_report_conversion('https://tally.so/r/Y5YMVz?variant=creative');">
       <button class="cta">Sign Up for Early Access</button>
     </a>
   </div>
@@ -42,7 +50,7 @@
       Replace frustration with something intuitive, expressive, and even a little fun.
     </p>
 
-    <a href="https://tally.so/r/Y5YMVz?variant=creative">
+    <a href="https://tally.so/r/Y5YMVz?variant=creative" onclick="return gtag_report_conversion('https://tally.so/r/Y5YMVz?variant=creative');">
       <button class="cta">Sign Up for Early Access</button>
     </a>
   </div>
@@ -163,8 +171,8 @@
       a more natural, creative way to access your accounts.
     </p>
 
-    <a href="https://tally.so/r/Y5YMVz?variant=creative">
-      <button class="cta large">Sign Up for Early Access</button>
+    <a href="https://tally.so/r/Y5YMVz?variant=creative" onclick="return gtag_report_conversion('https://tally.so/r/Y5YMVz?variant=creative');">
+      <button class="cta">Sign Up for Early Access</button>
     </a>
   </div>
 </section>
